@@ -10,16 +10,16 @@
 				<f:be.buttons.csh />
 				<f:be.menus.actionMenu>
 					<f:be.menus.actionMenuItem
-							label="{f:translate(key: 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs.actionMenuItem.allJobs')}"
+							label="{f:translate(key: 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs.actionMenuItem.allJobs')}"
 							action="list" controller="Job" />
 					<f:be.menus.actionMenuItem
-							label="{f:translate(key: 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs.actionMenuItem.allJobTypes')}"
+							label="{f:translate(key: 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs.actionMenuItem.allJobTypes')}"
 							action="list" controller="JobType" />
 					<f:be.menus.actionMenuItem
-							label="{f:translate(key: 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs.actionMenuItem.allLocations')}"
+							label="{f:translate(key: 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs.actionMenuItem.allLocations')}"
 							action="list" controller="Location" />
 					<f:be.menus.actionMenuItem
-							label="{f:translate(key: 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs.actionMenuItem.allContacts')}"
+							label="{f:translate(key: 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs.actionMenuItem.allContacts')}"
 							action="list" controller="Contact" />
 				</f:be.menus.actionMenu>
 			</div>
@@ -33,32 +33,32 @@
 				<div class="btn-group">
 					<be:link.newRecord table="tx_bwjobs_domain_model_job" pid="{settings.storagePid}" class="btn btn-icon btn-default btn-sm"
 									   title="{f:translate(key:'tx_bwjobs.create')}{f:translate(key:'tx_bwjobs_domain_model_job')}">
-						<f:translate key="LLL:EXT:jobs/Resources/Private/Language/locallang_bwjobs.xlf:backend.newjob"/>
+						<f:translate key="LLL:EXT:bw_jobs/Resources/Private/Language/locallang_bwjobs.xlf:backend.newjob"/>
 						<f:image src="EXT:core/Resources/Public/Icons/T3Icons/overlay/overlay-edit.svg" width="16" height="16" />
 					</be:link.newRecord>
 
 					<be:link.newRecord table="tx_bwjobs_domain_model_jobtype" pid="{settings.storagePid}" class="btn btn-icon btn-default btn-sm"
 									   title="{f:translate(key:'tx_bwjobs.create')}{f:translate(key:'tx_bwjobs_domain_model_jobtype')}">
-						<f:translate key="LLL:EXT:jobs/Resources/Private/Language/locallang_bwjobs.xlf:backend.newemploy"/>
+						<f:translate key="LLL:EXT:bw_jobs/Resources/Private/Language/locallang_bwjobs.xlf:backend.newemploy"/>
 						<f:image src="EXT:core/Resources/Public/Icons/T3Icons/content/content-clock.svg" width="16" height="16" />
 					</be:link.newRecord>
 
 					<be:link.newRecord table="tx_bwjobs_domain_model_location" pid="{settings.storagePid}" class="btn btn-icon btn-default btn-sm"
 									   title="{f:translate(key:'tx_bwjobs.create')}{f:translate(key:'tx_bwjobs_domain_model_job.location')}">
-						<f:translate key="LLL:EXT:jobs/Resources/Private/Language/locallang_bwjobs.xlf:backend.newlocation"/>
+						<f:translate key="LLL:EXT:bw_jobs/Resources/Private/Language/locallang_bwjobs.xlf:backend.newlocation"/>
 
 						<f:image src="EXT:core/Resources/Public/Icons/T3Icons/apps/apps-pagetree-folder-root.svg" width="16" height="16" />
 					</be:link.newRecord>
 
 					<be:link.newRecord table="tx_bwjobs_domain_model_contact" pid="{settings.storagePid}" class="btn btn-icon btn-default btn-sm"
 									   title="{f:translate(key:'tx_bwjobs.create')}{f:translate(key:'tx_bwjobs_domain_model_location.contact')}">
-						<f:translate key="LLL:EXT:jobs/Resources/Private/Language/locallang_bwjobs.xlf:backend.newcontact"/>
+						<f:translate key="LLL:EXT:bw_jobs/Resources/Private/Language/locallang_bwjobs.xlf:backend.newcontact"/>
 
 						<f:image src="EXT:core/Resources/Public/Icons/T3Icons/overlay/overlay-backenduser.svg" width="16" height="16" />
 					</be:link.newRecord>
 					<be:link.newRecord table="sys_category" pid="{settings.storagePid}" class="btn btn-icon btn-default btn-sm"
 									   title="{f:translate(key:'tx_bwjobs.create')}{f:translate(key:'tx_bwjobs_domain_model_job.categories')}">
-						<f:translate key="LLL:EXT:jobs/Resources/Private/Language/locallang_bwjobs.xlf:backend.newcategory"/>
+						<f:translate key="LLL:EXT:bw_jobs/Resources/Private/Language/locallang_bwjobs.xlf:backend.newcategory"/>
 
 						<f:image src="EXT:core/Resources/Public/Icons/T3Icons/mimetypes/mimetypes-x-sys_category.svg" width="16" height="16" />
 

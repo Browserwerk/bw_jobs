@@ -20,7 +20,7 @@ finishers:
     options:
       email: EmailToSender
       subject: Application
-      templatePathAndFilename: 'EXT:jobs/Resources/Private/Fluid/Forms/Email/Confirmation.html'
+      templatePathAndFilename: 'EXT:bw_jobs/Resources/Private/Fluid/Forms/Email/Confirmation.html'
       attachUploads: false
   -
     options:

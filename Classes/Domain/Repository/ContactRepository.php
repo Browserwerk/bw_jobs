@@ -12,6 +12,7 @@ use TYPO3\CMS\Extbase\Persistence\QueryInterface;
  * LICENSE.txt file that was distributed with this source code.
  *
  *  (c) 2019 Vincent Bärtsch , Browserwerk GmbH
+ *           Valentin Süß , Browserwerk GmbH
  *
  ***/
 class ContactRepository extends AbstractRepository

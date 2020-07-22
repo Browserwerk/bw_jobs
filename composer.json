@@ -1,5 +1,5 @@
 {
-    "name": "browserwerk/jobs",
+    "name": "browserwerk/bw_jobs",
     "license": "MIT",
     "type": "typo3-cms-extension",
     "description": "",
@@ -9,9 +9,9 @@
             "role": "Developer"
         }
     ],
-    "version": "1.1.1",
+    "version": "1.1.0",
     "require": {
-        "typo3/cms-core": "^9.5.10 || ^10.4.2"
+        "typo3/cms-core": "^9.5.4 || ^10.4.2"
     },
     "autoload": {
         "psr-4": {
@@ -19,7 +19,7 @@
         }
     },
     "replace": {
-        "jobs": "self.version",
+        "browserwerk/bw_jobs": "self.version",
         "typo3-ter/bw-jobs": "self.version"
     }
 }

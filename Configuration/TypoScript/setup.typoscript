@@ -41,5 +41,5 @@ config.tx_extbase.persistence.classes {
 }
 
 # Setups
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:jobs/Configuration/TypoScript/Plugin/" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bw_jobs/Configuration/TypoScript/Plugin/" extensions="typoscript">
 

@@ -2,7 +2,7 @@
 
 return [
     'ctrl' => [
-        'title'                    => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype',
+        'title'                    => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype',
         'label'                    => 'title',
         'tstamp'                   => 'tstamp',
         'crdate'                   => 'crdate',
@@ -120,7 +120,7 @@ return [
 
         'title' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.title',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.title',
             'config'  => [
                 'type' => 'input',
                 'size' => 30,
@@ -129,7 +129,7 @@ return [
         ],
         'description' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.description',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.description',
             'config'  => [
                 'type' => 'input',
                 'size' => 30,
@@ -138,19 +138,19 @@ return [
         ],
         'employment_type' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.employment_type',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.employment_type',
             'config'  => [
                 'type'       => 'select',
                 'renderType' => 'selectSingle',
                 'items'      => [
-                    ['LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.fulltime', 'FULL_TIME'],
-                    ['LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.parttime', 'PART_TIME'],
-                    ['LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.contractor', 'CONTRACTOR'],
-                    ['LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.intern', 'INTERN'],
-                    ['LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.volunteer', 'VOLUNTEER'],
-                    ['LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.prediem', 'PER_DIEM'],
-                    ['LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.temporary', 'TEMPORARY'],
-                    ['LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.other', 'OTHER'],
+                    ['LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.fulltime', 'FULL_TIME'],
+                    ['LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.parttime', 'PART_TIME'],
+                    ['LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.contractor', 'CONTRACTOR'],
+                    ['LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.intern', 'INTERN'],
+                    ['LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.volunteer', 'VOLUNTEER'],
+                    ['LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.prediem', 'PER_DIEM'],
+                    ['LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.temporary', 'TEMPORARY'],
+                    ['LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_jobtype.other', 'OTHER'],
                 ],
                 'size'     => 1,
                 'maxitems' => 1,

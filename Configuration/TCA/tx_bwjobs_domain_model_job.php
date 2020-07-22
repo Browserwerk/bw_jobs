@@ -2,7 +2,7 @@
 
 return [
     'ctrl' => [
-        'title'                    => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job',
+        'title'                    => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job',
         'label'                    => 'title',
         'tstamp'                   => 'tstamp',
         'crdate'                   => 'crdate',
@@ -27,7 +27,7 @@ return [
     'types' => [
         '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, slug, teaser, --palette--;;times, location, job_type, 
         --div--;LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.textlabel;;;1-1-1, description, benefits, education_requirements, experience_requirements, qualifications, responsibilities, skills, special_commitment, 
-        --div--;LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.salarylabel;;;1-1-1, show_salary, currency, salary, cycle,
+        --div--;LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.salarylabel;;;1-1-1, show_salary, currency, salary, cycle,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
 
@@ -124,7 +124,7 @@ return [
 
         'title' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.title',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.title',
             'config'  => [
                 'type' => 'input',
                 'size' => 30,
@@ -133,7 +133,7 @@ return [
         ],
         'slug' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.slug',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.slug',
             'config'  => [
                 'type'             => 'slug',
                 'generatorOptions' => [
@@ -150,7 +150,7 @@ return [
         ],
         'teaser' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.teaser',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.teaser',
             'config'  => [
                 'type'                  => 'text',
                 'enableRichtext'        => true,
@@ -167,7 +167,7 @@ return [
         ],
         'description' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.description',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.description',
             'config'  => [
                 'type'                  => 'text',
                 'enableRichtext'        => true,
@@ -184,7 +184,7 @@ return [
         ],
         'benefits' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.benefits',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.benefits',
             'config'  => [
                 'type'                  => 'text',
                 'enableRichtext'        => true,
@@ -201,7 +201,7 @@ return [
         ],
         'education_requirements' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.education_requirements',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.education_requirements',
             'config'  => [
                 'type'                  => 'text',
                 'enableRichtext'        => true,
@@ -218,7 +218,7 @@ return [
         ],
         'experience_requirements' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.experience_requirements',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.experience_requirements',
             'config'  => [
                 'type'                  => 'text',
                 'enableRichtext'        => true,
@@ -235,7 +235,7 @@ return [
         ],
         'qualifications' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.qualifications',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.qualifications',
             'config'  => [
                 'type'                  => 'text',
                 'enableRichtext'        => true,
@@ -252,7 +252,7 @@ return [
         ],
         'responsibilities' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.responsibilities',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.responsibilities',
             'config'  => [
                 'type'                  => 'text',
                 'enableRichtext'        => true,
@@ -269,7 +269,7 @@ return [
         ],
         'skills' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.skills',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.skills',
             'config'  => [
                 'type'                  => 'text',
                 'enableRichtext'        => true,
@@ -286,7 +286,7 @@ return [
         ],
         'special_commitment' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.special_commitment',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.special_commitment',
             'config'  => [
                 'type'                  => 'text',
                 'enableRichtext'        => true,
@@ -303,7 +303,7 @@ return [
         ],
         'work_hours' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.work_hours',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.work_hours',
             'config'  => [
                 'type' => 'input',
                 'size' => 10,
@@ -312,7 +312,7 @@ return [
         ],
         'job_start' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.job_start',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.job_start',
             'config'  => [
                 'type'       => 'input',
                 'renderType' => 'inputDateTime',
@@ -326,7 +326,7 @@ return [
         ],
         'valid_through' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.valid_through',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.valid_through',
             'config'  => [
                 'type'       => 'input',
                 'renderType' => 'inputDateTime',
@@ -353,7 +353,7 @@ return [
         ],
         'location' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.location',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.location',
             'config'  => [
                 'type'                => 'select',
                 'renderType'          => 'selectMultipleSideBySide',
@@ -380,7 +380,7 @@ return [
         ],
         'job_type' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.job_type',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.job_type',
             'config'  => [
                 'type'                => 'select',
                 'renderType'          => 'selectMultipleSideBySide',
@@ -424,7 +424,7 @@ return [
         ],
         'currency' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.currency',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.currency',
             'config'  => [
                 'type' => 'input',
                 'size' => 90,
@@ -432,7 +432,7 @@ return [
         ],
         'salary' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.salary',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.salary',
             'config'  => [
                 'type' => 'input',
                 'size' => 10,
@@ -441,12 +441,12 @@ return [
         ],
         'cycle' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.cycle',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.cycle',
             'config'  => [
                 'type'       => 'select',
                 'renderType' => 'selectSingle',
                 'items'      => [
-                    ['LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.cycle_hour', 'HOUR'],
+                    ['LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.cycle_hour', 'HOUR'],
                     ['LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.cycle_day', 'DAY'],
                     ['LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.cycle_month', 'MONTH'],
                     ['LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.cycle_year', 'YEAR'],

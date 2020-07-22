@@ -22,19 +22,19 @@
                                     </numIndex>
                                     <numIndex index="1">
                                         <numIndex index="0">
-                                            LLL:EXT:jobs/Resources/Private/Language/locallang_jobplugin.xlf:tx_bwjobs.job_plugin.switchableControllerActions.jobListing
+                                            LLL:EXT:bw_jobs/Resources/Private/Language/locallang_jobplugin.xlf:tx_bwjobs.job_plugin.switchableControllerActions.jobListing
                                         </numIndex>
                                         <numIndex index="1">Job->list</numIndex>
                                     </numIndex>
                                     <numIndex index="2">
                                         <numIndex index="0">
-                                            LLL:EXT:jobs/Resources/Private/Language/locallang_jobplugin.xlf:tx_bwjobs.job_plugin.switchableControllerActions.jobDetail
+                                            LLL:EXT:bw_jobs/Resources/Private/Language/locallang_jobplugin.xlf:tx_bwjobs.job_plugin.switchableControllerActions.jobDetail
                                         </numIndex>
                                         <numIndex index="1">Job->show</numIndex>
                                     </numIndex>
                                     <numIndex index="3">
                                         <numIndex index="0">
-                                            LLL:EXT:jobs/Resources/Private/Language/locallang_jobplugin.xlf:tx_bwjobs.job_plugin.switchableControllerActions.jobFilter
+                                            LLL:EXT:bw_jobs/Resources/Private/Language/locallang_jobplugin.xlf:tx_bwjobs.job_plugin.switchableControllerActions.jobFilter
                                         </numIndex>
                                         <numIndex index="1">Job->filter</numIndex>
                                     </numIndex>
@@ -47,7 +47,7 @@
                     <settings.detailPage>
                         <TCEforms>
                             <label>
-                                LLL:EXT:jobs/Resources/Private/Language/locallang_jobplugin.xlf:tx_bwjobs.job_plugin.settings.detailPage
+                                LLL:EXT:bw_jobs/Resources/Private/Language/locallang_jobplugin.xlf:tx_bwjobs.job_plugin.settings.detailPage
                             </label>
                             <displayCond>FIELD:switchableControllerActions:=:Job->list</displayCond>
                             <config>
@@ -64,7 +64,7 @@
                     <settings.listPage>
                         <TCEforms>
                             <label>
-                                LLL:EXT:jobs/Resources/Private/Language/locallang_jobplugin.xlf:tx_bwjobs.job_plugin.settings.listPage
+                                LLL:EXT:bw_jobs/Resources/Private/Language/locallang_jobplugin.xlf:tx_bwjobs.job_plugin.settings.listPage
                             </label>
                             <displayCond>FIELD:switchableControllerActions:=:Job->show</displayCond>
                             <config>
@@ -81,7 +81,7 @@
                     <settings.itemSize>
                         <TCEforms>
                             <label>
-                                LLL:EXT:jobs/Resources/Private/Language/locallang_jobplugin.xlf:tx_bwjobs.job_plugin.settings.jobPaginationSize
+                                LLL:EXT:bw_jobs/Resources/Private/Language/locallang_jobplugin.xlf:tx_bwjobs.job_plugin.settings.jobPaginationSize
                             </label>
                             <displayCond>FIELD:switchableControllerActions:=:Job->list</displayCond>
                             <config>
@@ -93,7 +93,7 @@
                     <settings.application>
                         <TCEforms>
                             <label>
-                                LLL:EXT:jobs/Resources/Private/Language/locallang_jobplugin.xlf:tx_bwjobs.job_plugin.settings.applicationsForm
+                                LLL:EXT:bw_jobs/Resources/Private/Language/locallang_jobplugin.xlf:tx_bwjobs.job_plugin.settings.applicationsForm
                             </label>
                             <displayCond>
                                 <OR>

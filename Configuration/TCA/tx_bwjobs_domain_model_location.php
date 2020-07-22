@@ -2,7 +2,7 @@
 
 return [
     'ctrl' => [
-        'title'                    => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location',
+        'title'                    => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location',
         'label'                    => 'title',
         'tstamp'                   => 'tstamp',
         'crdate'                   => 'crdate',
@@ -120,7 +120,7 @@ return [
 
         'title' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.title',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.title',
             'config'  => [
                 'type' => 'input',
                 'size' => 30,
@@ -129,7 +129,7 @@ return [
         ],
         'description' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.description',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.description',
             'config'  => [
                 'type'                  => 'text',
                 'enableRichtext'        => true,
@@ -146,7 +146,7 @@ return [
         ],
         'street' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.street',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.street',
             'config'  => [
                 'type' => 'input',
                 'size' => 30,
@@ -155,7 +155,7 @@ return [
         ],
         'city' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.city',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.city',
             'config'  => [
                 'type' => 'input',
                 'size' => 90,
@@ -164,7 +164,7 @@ return [
         ],
         'zip' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.zip',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.zip',
             'config'  => [
                 'type' => 'input',
                 'size' => 10,
@@ -173,7 +173,7 @@ return [
         ],
         'country' => [
             'exclude' => true,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.country',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.country',
             'config'  => [
                 'type' => 'input',
                 'size' => 90,
@@ -181,7 +181,7 @@ return [
         ],
         'countryzone' => [
             'exclude' => true,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.countryzone',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.countryzone',
             'config'  => [
                 'type' => 'input',
                 'size' => 90,
@@ -237,7 +237,7 @@ return [
         ],
         'longitude' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.longitude',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.longitude',
             'config'  => [
                 'type' => 'input',
                 'size' => 30,
@@ -246,7 +246,7 @@ return [
         ],
         'latitude' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.latitude',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.latitude',
             'config'  => [
                 'type' => 'input',
                 'size' => 30,
@@ -255,7 +255,7 @@ return [
         ],
         'contact' => [
             'exclude' => false,
-            'label'   => 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.contact',
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.contact',
             'config'  => [
                 'type'                => 'select',
                 'renderType'          => 'selectSingle',
@@ -270,20 +270,20 @@ return [
     'palettes' => [
         'zip_city' => [
             'showitem' => '
-                zip;LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.zip,
-                city;LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.city
+                zip;LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.zip,
+                city;LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.city
             ',
         ],
         'geolocation' => [
             'showitem' => '
-                longitude;LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.longitude,
-                latitude;LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.latitude
+                longitude;LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.longitude,
+                latitude;LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.latitude
             ',
         ],
         'countryselect' => [
             'showitem' => '
-                country;LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.country,
-                countryzone;LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.countryzone
+                country;LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.country,
+                countryzone;LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_location.countryzone
             ',
         ],
     ],

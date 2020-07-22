@@ -30,7 +30,7 @@ class PreviewRenderer implements PageLayoutViewDrawItemHookInterface
 
             // Festlegen der Template-Datei
             /** @var \TYPO3\CMS\Fluid\View\StandaloneView $fluidTemplate */
-            $fluidTmplFilePath = GeneralUtility::getFileAbsFileName('EXT:jobs/Resources/Private/Backend/Templates/Template.html');
+            $fluidTmplFilePath = GeneralUtility::getFileAbsFileName('EXT:bw_jobs/Resources/Private/Backend/Templates/Template.html');
             $fluidTmpl = GeneralUtility::makeInstance('TYPO3\CMS\Fluid\View\StandaloneView');
             $fluidTmpl->setTemplatePathAndFilename($fluidTmplFilePath);
             $fluidTmpl->assign('flex', $flexform);

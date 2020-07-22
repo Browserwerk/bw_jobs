@@ -20,6 +20,6 @@
     },
     "replace": {
         "browserwerk/bw_jobs": "self.version",
-        "typo3-ter/bw-jobs": "self.version"
+        "typo3-ter/bw_jobs": "self.version"
     }
 }

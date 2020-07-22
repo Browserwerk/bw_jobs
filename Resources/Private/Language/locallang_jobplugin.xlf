@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-08-13T19:30:02Z"
+          product-name="bw_jobs">
+        <header/>
+        <body>
+            <trans-unit id="tx_bwjobs.job_plugin.sheetTitle">
+                <source>Frontend</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs.job_plugin.sheetTitle2">
+                <source>Filter</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs.job_plugin.switchableControllerActions.label">
+                <source>View</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs.job_plugin.switchableControllerActions.jobListing">
+                <source>Job Listing</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs.job_plugin.switchableControllerActions.jobDetail">
+                <source>Job Detail</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs.job_plugin.switchableControllerActions.jobFilter">
+                <source>Job Filter</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs.job_plugin.settings.detailPage">
+                <source>Detail Page</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs.job_plugin.settings.listPage">
+                <source>List Page</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs.job_plugin.settings.jobStoragePage">
+                <source>Job Storage Page</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs.job_plugin.settings.jobPaginationSize">
+                <source>List Pagination Size</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs.job_plugin.settings.applicationsForm">
+                <source>Applications Form</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

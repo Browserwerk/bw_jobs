@@ -1,0 +1,31 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+{namespace bw=Browserwerk\BwJobs\ViewHelper}
+<f:cache.disable>
+<f:for each="{post_filter.catergory}" as="uid"></f:for>
+    <f:form class="container" id="filter_form" name="filter" method="post" action="showFilter" object="{filter}">
+        <div class="row">
+            <div class="col-4">
+                <f:for each="{filter.jobtype}" as="jobtype">
+                    <input type="checkbox" name="tx_bwjobs_frontend[jobtype][]" value="{jobtype.uid}"
+                           {bw:inArray(haystack:'{post_filter.jobtype}',needle:'{jobtype.uid}',then:'checked',else:'')}/> {jobtype.title}<br />
+                </f:for>
+            </div>
+            <div class="col-4">
+                <f:for each="{filter.location}" as="location">
+                    <input type="checkbox" name="tx_bwjobs_frontend[location][]" value="{location.uid}"
+                           {bw:inArray(haystack:'{post_filter.location}',needle:'{location.uid}',then:'checked',else:'')}/> {location.title}<br />
+
+                </f:for>
+            </div>
+            <div class="col-4">
+                <f:for each="{filter.category}" as="category">
+                    <input type="checkbox" name="tx_bwjobs_frontend[category][]" value="{category.uid}"
+                           {bw:inArray(haystack:'{post_filter.catergory}',needle:'{category.uid}',then:'checked',else:'')}/> {category.title}<br />
+                </f:for>
+            </div>
+        </div>
+        <button id="submit_filter" class="btn btn-primary" type="submit">Suchen</button>
+    </f:form>
+</f:cache.disable>
+</html>
+

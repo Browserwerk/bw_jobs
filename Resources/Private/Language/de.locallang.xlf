@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="en"
+        target-language="de"
+        datatype="plaintext"
+        original="messages"
+        product-name="bw_jobs">
+
+    <body>
+        <trans-unit id="tx_bwjobs_domain_model_job">
+          <target>Job</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.categories">
+          <target>Kategorien</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.title">
+          <target>Titel</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.teaser">
+          <target>Teaser</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.description">
+          <target>Beschreibung</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.benefits">
+          <target>Leistungen</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.education_requirements">
+          <target>Bildungsvoraussetzungen</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.experience_requirements">
+          <target>Erfahrungsvoraussetzungen</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.qualifications">
+          <target>Qualifikationen</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.responsibilities">
+          <target>Verantwortlichkeiten</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.skills">
+          <target>Kompetenzen</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.special_commitment">
+          <target>Besonderes Engagement</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.work_hours">
+          <target>Arbeitsstunden</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.job_start">
+          <target>Job Beginn</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.valid_through">
+          <target>Gültig bis</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.location">
+          <target>Standort</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.job_type">
+          <target>Beschäftigungsverhältnis</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.datePosted">
+          <target>Datum der Veröffentlichung</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.currency">
+          <target>Währung</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.salary">
+          <target>Gehalt</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_job.cycle">
+          <target>Gehalt</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_contact">
+          <target>Kontakt</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_contact.title">
+          <target>Titel</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_contact.gender">
+          <target>Geschlecht</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_contact.name">
+          <target>Name</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_contact.email">
+          <target>Email</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_contact.phone">
+          <target>Telefon</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_contact.fax">
+          <target>Fax</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_location">
+          <target>Standort</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_location.title">
+          <target>Titel</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_location.description">
+          <target>Beschreibung</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_location.street">
+          <target>Straße</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_location.city">
+          <target>Stadt</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_location.zip">
+          <target>PLZ</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_location.country">
+          <target>Land</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_location.countryzone">
+          <target>Länderzone</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_location.longitude">
+          <target>Longitude</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_location.latitude">
+          <target>Latitude</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_location.contact">
+          <target>Kontakt</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_jobtype">
+          <target>Employment Type</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_jobtype.title">
+          <target>Titel</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_jobtype.description">
+          <target>Beschreibung</target>
+        </trans-unit>
+        <trans-unit id="tx_bwjobs_domain_model_jobtype.employment_type">
+          <target>Beschäftigungsverhältnis</target>
+        </trans-unit>
+
+        <!-- Button -->
+        <trans-unit id="tx_browserwerk.button.learn_more">
+        <target>Mehr erfahren</target>
+        </trans-unit>
+
+        <!-- Form -->
+        <trans-unit id="application.element.application.properties.label">
+            <target>Bewerbung</target>
+        </trans-unit>
+        <trans-unit id="application.element.singleselect.properties.label">
+            <target>Anrede</target>
+        </trans-unit>
+        <trans-unit id="application.element.singleselect.properties.options.mrs">
+            <target>Frau</target>
+        </trans-unit>
+        <trans-unit id="application.element.singleselect.properties.options.mr">
+            <target>Herr</target>
+        </trans-unit>
+        <trans-unit id="application.element.singleselect.properties.options.other">
+            <target>Divers</target>
+        </trans-unit>
+        <trans-unit id="application.element.firstname.properties.label">
+            <target>Vorname</target>
+        </trans-unit>
+        <trans-unit id="application.element.lastname.properties.label">
+            <target>Nachname</target>
+        </trans-unit>
+        <trans-unit id="application.element.email.properties.label">
+            <target>E-Mail</target>
+        </trans-unit>
+        <trans-unit id="application.element.telephone.properties.label">
+            <target>Telefonnummer</target>
+        </trans-unit>
+        <trans-unit id="application.element.message.properties.label">
+            <target>Nachricht</target>
+        </trans-unit>
+        <trans-unit id="element.Form.renderingOptions.submitButtonLabel">
+            <target>Absenden</target>
+        </trans-unit>
+        <trans-unit id="application.element.fileupload-1.properties.label">
+            <target>Lebenslauf</target>
+        </trans-unit>
+        <trans-unit id="application.element.fileupload.properties.label">
+            <target>Motivationsschreiben</target>
+        </trans-unit>
+        <trans-unit id="application.element.fileupload-2.properties.label">
+            <target>Weiteres</target>
+        </trans-unit>
+    </body>
+
+  </file>
+</xliff>

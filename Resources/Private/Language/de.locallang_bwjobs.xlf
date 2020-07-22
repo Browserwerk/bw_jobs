@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-08-13T19:30:02Z"
+          product-name="bw_jobs">
+        <header/>
+        <body>
+            <trans-unit id="frontend.back">
+                <target>Zurück</target>
+            </trans-unit>
+            <trans-unit id="frontend.apply">
+                <target>Bewerben</target>
+            </trans-unit>
+            <trans-unit id="frontend.notfound">
+                <target>Es wurden keine Jobs gefunden</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

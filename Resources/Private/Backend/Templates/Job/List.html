@@ -1,0 +1,40 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default"/>
+<f:section name="content">
+        <f:be.tableList tableName="tx_bwjobs_domain_model_job"
+                    fieldList="{1:'location', 2:'job_type'}"
+                    sortField="name"
+                    storagePid="{settings.storagePid}"
+                    sortDescending="true"
+                    clickTitleMode="edit"
+    />
+
+    <f:be.tableList tableName="tx_bwjobs_domain_model_location"
+                    fieldList="{1:'street', 2:'city'}"
+                    storagePid="{settings.storagePid}"
+                    sortField="name"
+                    sortDescending="true"
+                    enableClickMenu="false"
+                    clickTitleMode="edit"
+    />
+    <f:be.tableList tableName="tx_bwjobs_domain_model_contact"
+                    fieldList="{1:'name', 2:'email', 3:'phone', 4:'fax'}"
+                    storagePid="{settings.storagePid}"
+                    sortField="name"
+                    sortDescending="true"
+                    enableClickMenu="false"
+                    clickTitleMode="edit"
+    />
+    <f:be.tableList tableName="tx_bwjobs_domain_model_jobtype"
+                    fieldList="{0:'employment_type', 1:'description'}"
+                    storagePid="{settings.storagePid}"
+                    sortField="name"
+                    recordsPerPage="10"
+                    sortDescending="true"
+                    clickTitleMode="edit"
+    />
+</f:section>
+</html>

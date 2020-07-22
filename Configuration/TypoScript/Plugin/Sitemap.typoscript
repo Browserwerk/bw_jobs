@@ -1,0 +1,26 @@
+# Sitemap
+plugin.tx_seo {
+    config {
+        xmlSitemap {
+            sitemaps {
+                jobs {
+                    provider = TYPO3\CMS\Seo\XmlSitemap\RecordsXmlSitemapDataProvider
+                    config {
+                        table = tx_bwjobs_domain_model_job
+                        sortField = sorting
+                        lastModifiedField = tstamp
+                        recursive = 1
+                        pid = {$plugin.tx_bwjobs.settings.storagePid}
+                        url {
+                            pageId = {$plugin.tx_bwjobs.settings.showPid}
+                            fieldToParameterMap {
+                                uid = tx_bwjobs_frontend[job]
+                            }
+                            useCacheHash = 0
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

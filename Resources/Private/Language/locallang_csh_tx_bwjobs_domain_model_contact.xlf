@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-08-13T19:30:02Z"
+          product-name="bw_jobs">
+        <header/>
+        <body>
+            <trans-unit id="title.description">
+                <source>title</source>
+            </trans-unit>
+            <trans-unit id="gender.description">
+                <source>gender</source>
+            </trans-unit>
+            <trans-unit id="name.description">
+                <source>name</source>
+            </trans-unit>
+            <trans-unit id="email.description">
+                <source>email</source>
+            </trans-unit>
+            <trans-unit id="phone.description">
+                <source>phone</source>
+            </trans-unit>
+            <trans-unit id="fax.description">
+                <source>fax</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

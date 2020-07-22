@@ -1,0 +1,25 @@
+<h2 class="pt-4">
+    <f:translate key="tx_bwjobs_domain_model_contact"/>
+</h2>
+<f:if condition="{contact.name}">
+    <p><strong>{contact.name}</strong></p>
+</f:if>
+<f:if condition="{contact.email}">
+    <p>{contact.email}</p>
+</f:if>
+<f:if condition="{contact.phone}">
+    <p>{contact.phone}</p>
+</f:if>
+<f:if condition="{contact.fax}">
+    <p>{contact.fax}</p>
+</f:if>
+
+<f:if condition="{contact.profilimage}">
+    <f:for each="{contact.profilimage}" as="file">
+        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" height="200" /><br />
+    </f:for>
+</f:if>
+
+<script>
+    var locationUid = {contact.uid};
+</script>

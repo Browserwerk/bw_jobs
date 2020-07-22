@@ -1,0 +1,18 @@
+# Form
+module.tx_form {
+    settings {
+        yamlConfigurations {
+            200 = EXT:bw_jobs/Configuration/Yaml/FormSetup.yaml
+        }
+    }
+}
+
+plugin.tx_form {
+    settings {
+        yamlConfigurations {
+            200 = EXT:bw_jobs/Configuration/Yaml/FormSetup.yaml
+        }
+    }
+}
+
+plugin.tx_bwjobs.mvc.callDefaultActionIfActionCantBeResolved = 1

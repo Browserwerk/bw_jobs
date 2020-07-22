@@ -1,0 +1,41 @@
+<tr>
+    <td>
+        <a href="{f:uri.action(pageUid: '{settings.detailPage}', action: 'show', arguments: '{job:job}', controller: 'Job', pluginName:  'Frontend')}"
+           title="{job.title}">
+            {job.title}
+        </a>
+    </td>
+    <td>
+        <a href="{f:uri.action(pageUid: '{settings.detailPage}', action: 'show', arguments: '{job:job}', controller: 'Job', pluginName:  'Frontend')}"
+           title="{job.title}">
+            <f:for each="{job.categories}" as="jobCategories">
+                {jobCategories.title}
+            </f:for>
+        </a>
+    </td>
+    <td class="d-none d-sm-table-cell">
+        <a href="{f:uri.action(pageUid: '{settings.detailPage}', action: 'show', arguments: '{job:job}', controller: 'Job', pluginName:  'Frontend')}"
+           title="{job.title}">
+            <f:for each="{job.location}" as="jobLocation">
+                {jobLocation.city}
+            </f:for>
+        </a>
+    </td>
+    <td class="d-none d-sm-table-cell">
+        <a href="{f:uri.action(pageUid: '{settings.detailPage}', action: 'show', arguments: '{job:job}', controller: 'Job', pluginName:  'Frontend')}"
+           title="{job.title}" >
+            <f:for each="{job.jobType}" as="jobType">
+                {jobType.title}
+            </f:for>
+        </a>
+    </td>
+    <f:if condition="{settings.application}">
+        <td class="d-none d-sm-table-cell">
+            <a href="{f:uri.action(pageUid: '{settings.detailPage}', action: 'show', arguments: '{job:job}', controller: 'Job', pluginName:  'Frontend')}#application_link"
+               class="btn btn-primary" role="button"
+               title="{job.title}">
+                <f:translate key="LLL:EXT:jobs/Resources/Private/Language/locallang_bwjobs.xlf:frontend.apply"/>
+            </a>
+        </td>
+    </f:if>
+</tr>

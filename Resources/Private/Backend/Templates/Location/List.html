@@ -1,0 +1,23 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+
+<f:section name="content">
+    <be:link.newRecord table="tx_bwjobs_domain_model_location" pid="{settings.storagePid}" class="btn btn-icon btn-default btn-sm"
+                       title="{f:translate(key:'tx_bwjobs.create')}{f:translate(key:'tx_bwjobs_domain_model_job.location')}">
+        +
+        <f:image src="EXT:core/Resources/Public/Icons/T3Icons/apps/apps-pagetree-folder-root.svg" width="26" height="26" />
+    </be:link.newRecord>
+    <f:flashMessages/>
+    <f:be.tableList tableName="tx_bwjobs_domain_model_location"
+                    fieldList="{1:'street', 2:'city'}"
+                    sortField="name"
+                    storagePid="{settings.storagePid}"
+                    sortDescending="true"
+                    enableClickMenu="false"
+                    clickTitleMode="edit"
+    />
+
+</f:section>
+</html>

@@ -1,0 +1,45 @@
+plugin.tx_bwjobs {
+    view {
+        templateRootPaths.0 = {$plugin.tx_bwjobs.view.templateRootPaths}
+        partialRootPaths.0 = {$plugin.tx_bwjobs.view.partialRootPaths}
+        layoutRootPaths.0 = {$plugin.tx_bwjobs.view.layoutRootPaths}
+    }
+    persistence {
+        storagePid = {$plugin.tx_bwjobs.settings.storagePid}
+        #recursive = 1
+    }
+    features {
+        #skipDefaultArguments = 1
+        # if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+        # Should be on by default, but can be disabled if all action in the plugin are uncached
+        requireCHashArgumentForActionArguments = 1
+    }
+}
+
+# Module configuration
+module.tx_bwjobs {
+    view {
+        templateRootPaths.0 = {$module.tx_bwjobs.view.templateRootPaths}
+        partialRootPaths.0 = {$module.tx_bwjobs.view.partialRootPaths}
+        layoutRootPaths.0 = {$module.tx_bwjobs.view.layoutRootPaths}
+    }
+    settings {
+        storagePid < plugin.tx_bwjobs.persistence.storagePid
+    }
+}
+
+
+// map to use syscategory repository functions
+config.tx_extbase.persistence.classes {
+    Browserwerk\BwJobs\Domain\Model\JobCategory {
+        mapping {
+            recordType = 0
+            tableName = sys_category
+        }
+    }
+}
+
+# Setups
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:jobs/Configuration/TypoScript/Plugin/" extensions="typoscript">
+

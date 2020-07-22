@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en"
+          target-language="de"
+          datatype="plaintext"
+          original="messages"
+          product-name="bw_jobs">
+        <header/>
+        <body>
+            <trans-unit id="tx_bwjobs_domain_model_job">
+                <source>Job</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.categories">
+                <source>Categories</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.jobType">
+                <source>Employment Type</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.slug">
+                <source>Slug</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.teaser">
+                <source>Teaser</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.benefits">
+                <source>Benefits</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.education_requirements">
+                <source>Education Requirements</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.experience_requirements">
+                <source>Experience Requirements</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.qualifications">
+                <source>Qualifications</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.responsibilities">
+                <source>Responsibilities</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.skills">
+                <source>Skills</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.special_commitment">
+                <source>Special Commitment</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.work_hours">
+                <source>Work Hours</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.job_start">
+                <source>Job Start</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.valid_through">
+                <source>Valid Through</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.location">
+                <source>Location</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.job_type">
+                <source>Employment Type</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.datePosted">
+                <source>Date Posted</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.currency">
+                <source>Currency</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.salary">
+                <source>Salary</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_job.cycle">
+                <source>Cycle</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_contact">
+                <source>Contact</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_contact.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_contact.gender">
+                <source>Gender</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_contact.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_contact.email">
+                <source>Email</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_contact.phone">
+                <source>Phone</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_contact.fax">
+                <source>Fax</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_location">
+                <source>Location</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_location.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_location.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_location.street">
+                <source>Street</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_location.city">
+                <source>City</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_location.zip">
+                <source>Zip</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_location.country">
+                <source>Country</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_location.countryzone">
+                <source>Country Zone</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_location.longitude">
+                <source>Longitude</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_location.latitude">
+                <source>Latitude</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_location.contact">
+                <source>Contact</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_jobtype">
+                <source>Employment Type</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_jobtype.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_jobtype.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_bwjobs_domain_model_jobtype.employment_type">
+                <source>Employment Type</source>
+            </trans-unit>
+
+            <trans-unit id="application.element.application.properties.label">
+                <source>Application</source>
+            </trans-unit>
+            <trans-unit id="application.element.singleselect.properties.label">
+                <source>Salutation</source>
+            </trans-unit>
+            <trans-unit id="application.element.singleselect.properties.options.mrs">
+                <source>Mrs.</source>
+            </trans-unit>
+            <trans-unit id="application.element.singleselect.properties.options.mr">
+                <source>Mr.</source>
+            </trans-unit>
+            <trans-unit id="application.element.singleselect.properties.options.other">
+                <source>Others</source>
+            </trans-unit>
+            <trans-unit id="application.element.firstname.properties.label">
+                <source>First name</source>
+            </trans-unit>
+            <trans-unit id="application.element.lastname.properties.label">
+                <source>Last name</source>
+            </trans-unit>
+            <trans-unit id="application.element.email.properties.label">
+                <source>E-Mail</source>
+            </trans-unit>
+            <trans-unit id="application.element.telephone.properties.label">
+                <source>Telephone number</source>
+            </trans-unit>
+            <trans-unit id="application.element.message.properties.label">
+                <source>Message</source>
+            </trans-unit>
+            <trans-unit id="application.element.Form.renderingOptions.submitButtonLabel">
+                <source>Submit</source>
+            </trans-unit>
+            <trans-unit id="application.element.fileupload-1.properties.label">
+                <source>Curriculum vitae</source>
+            </trans-unit>
+            <trans-unit id="application.element.fileupload.properties.label">
+                <source>Cover letter</source>
+            </trans-unit>
+            <trans-unit id="application.element.fileupload-2.properties.label">
+                <source>Other</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

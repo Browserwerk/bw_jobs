@@ -1,7 +1,7 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title'            => 'Bowserwerk GmbH Job',
+    'title'            => 'Bw_Jobs',
     'description'      => '',
     'category'         => 'plugin',
     'author'           => 'Vincent Bärtsch',

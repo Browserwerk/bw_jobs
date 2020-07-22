@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-08-13T19:30:02Z"
+          product-name="bw_jobs">
+        <header/>
+        <body>
+            <trans-unit id="title.description">
+                <source>title</source>
+            </trans-unit>
+            <trans-unit id="description.description">
+                <source>description</source>
+            </trans-unit>
+            <trans-unit id="street.description">
+                <source>street</source>
+            </trans-unit>
+            <trans-unit id="city.description">
+                <source>city</source>
+            </trans-unit>
+            <trans-unit id="zip.description">
+                <source>zip</source>
+            </trans-unit>
+            <trans-unit id="country.description">
+                <source>country</source>
+            </trans-unit>
+            <trans-unit id="countryzone.description">
+                <source>countryzone</source>
+            </trans-unit>
+            <trans-unit id="longitude.description">
+                <source>longitude</source>
+            </trans-unit>
+            <trans-unit id="latitude.description">
+                <source>latitude</source>
+            </trans-unit>
+            <trans-unit id="contact.description">
+                <source>contact</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

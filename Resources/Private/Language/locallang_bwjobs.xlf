@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-08-13T19:30:02Z"
+          product-name="bw_jobs">
+        <header/>
+        <body>
+            <trans-unit id="mlang_tabs_tab">
+                <source>Jobs</source>
+            </trans-unit>
+            <trans-unit id="frontend.back">
+                <source>Go Back</source>
+            </trans-unit>
+            <trans-unit id="frontend.apply">
+                <source>Apply</source>
+            </trans-unit>
+            <trans-unit id="frontend.notfound">
+                <source>No jobs were found</source>
+            </trans-unit>
+            <trans-unit id="backend.newjob">
+                <source>New Job</source>
+            </trans-unit>
+            <trans-unit id="backend.newemploy">
+                <source>New Employment Type</source>
+            </trans-unit>
+            <trans-unit id="backend.newlocation">
+                <source>New Location</source>
+            </trans-unit>
+            <trans-unit id="backend.newcontact">
+                <source>New Contact</source>
+            </trans-unit>
+            <trans-unit id="backend.newcategory">
+                <source>New Category</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

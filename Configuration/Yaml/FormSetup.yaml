@@ -1,0 +1,29 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowedFileMounts:
+          1570006253: EXT:bw_jobs/Resources/Private/Fluid/Forms/
+        allowedExtensionPaths:
+          1570006253: EXT:bw_jobs/Resources/Private/Fluid/Forms/
+        allowSaveToExtensionPaths: true
+        allowDeleteFromExtensionPaths: true
+      prototypes:
+        bw_jobs:
+          __inheritances:
+            10: 'TYPO3.CMS.Form.prototypes.standard'
+          formElementsDefinition:
+            Form:
+              rendererClassName: 'TYPO3\CMS\Form\Domain\Renderer\FluidFormRenderer'
+              renderingOptions:
+                partialRootPaths:
+                  100: 'EXT:bw_jobs/Resources/Private/Fluid/Forms/Partials'
+                translation:
+                  translationFiles:
+                    1593499657: 'EXT:bw_jobs/Resources/Private/Language/locallang.xlf'
+          formEditor:
+            translationFiles:
+              1593499657: 'EXT:bw_jobs/Resources/Private/Language/locallang.xlf'
+          finishersDefinition:
+            JobEmail:
+              implementationClassName: 'Browserwerk\BwJobs\Domain\Finishers\JobEmailFinisher'

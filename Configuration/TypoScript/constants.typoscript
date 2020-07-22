@@ -1,0 +1,25 @@
+plugin.tx_bwjobs {
+    view {
+        # cat=plugin.tx_bwjobs; type=string; label=Template root path for frontend
+        templateRootPaths = EXT:jobs/Resources/Private/Templates/
+        # cat=plugin.tx_bwjobs; type=string; label=Partial root path for frontend
+        partialRootPaths = EXT:jobs/Resources/Private/Partials/
+        # cat=plugin.tx_bwjobs; type=string; label=Layout root path for frontend
+        layoutRootPaths = EXT:jobs/Resources/Private/Layouts/
+    }
+    settings {
+        # cat=plugin.tx_bwjobs; type=int; label=ID of the detail page
+        showPid =
+        # cat=plugin.tx_bwjobs; type=int; label=ID of the storage folder
+        storagePid =
+    }
+}
+
+module.tx_bwjobs {
+    view {
+        templateRootPaths = EXT:jobs/Resources/Private/Backend/Templates/
+        partialRootPaths = EXT:jobs/Resources/Private/Backend/Partials/
+        layoutRootPaths = EXT:jobs/Resources/Private/Backend/Layouts/
+    }
+}
+

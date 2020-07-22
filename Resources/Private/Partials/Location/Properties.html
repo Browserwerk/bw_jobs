@@ -1,0 +1,50 @@
+<h2 class="pt-4">
+    <f:translate key="tx_bwjobs_domain_model_job.location"/>
+</h2>
+<f:if condition="{location.description}">
+    <f:format.html parseFuncTSPath="lib.parseFunc">{location.description}</f:format.html>
+</f:if>
+
+<table class="table">
+    <tbody>
+    <f:if condition="{location.street}">
+        <tr>
+            <td>
+                <f:translate key="tx_bwjobs_domain_model_location.street"/>
+            </td>
+            <td>
+                {location.street}
+            </td>
+        </tr>
+    </f:if>
+    <f:if condition="{location.city}">
+        <tr>
+            <td>
+                <f:translate key="tx_bwjobs_domain_model_location.city"/>
+            </td>
+            <td>{location.city}</td>
+        </tr>
+    </f:if>
+    <f:if condition="{location.zip}">
+        <tr>
+            <td>
+                <f:translate key="tx_bwjobs_domain_model_location.zip"/>
+            </td>
+            <td>{location.zip}</td>
+        </tr>
+    </f:if>
+    <f:if condition="{location.longitude} && {location.latitude} ">
+        <tr>
+            <td>
+                <f:translate key="tx_bwjobs_domain_model_location.longitude"/>
+                &
+                <f:translate key="tx_bwjobs_domain_model_location.latitude"/>
+            </td>
+            <td>{location.longitude} & {location.latitude}</td>
+        </tr>
+    </f:if>
+    </tbody>
+</table>
+
+<f:render partial="Contact/Properties" arguments="{contact:location.contact}"/>
+

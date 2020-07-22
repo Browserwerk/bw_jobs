@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+
+<f:section name="content">
+    <be:link.newRecord table="tx_bwjobs_domain_model_contact" pid="{settings.storagePid}" class="btn btn-icon btn-default btn-sm"
+                       title="{f:translate(key:'tx_bwjobs.create')}{f:translate(key:'tx_bwjobs_domain_model_location.contact')}">
+        +
+        <f:image src="EXT:core/Resources/Public/Icons/T3Icons/overlay/overlay-backenduser.svg" width="26" height="26" />
+    </be:link.newRecord>
+    <f:be.tableList tableName="tx_bwjobs_domain_model_contact"
+                    fieldList="{1:'name', 2:'email', 3:'phone', 4:'fax'}"
+                    sortField="name"
+                    sortDescending="true"
+                    enableClickMenu="false"
+                    storagePid="{settings.storagePid}"
+                    clickTitleMode="edit"
+    />
+</f:section>
+</html>

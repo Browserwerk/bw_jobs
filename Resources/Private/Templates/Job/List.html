@@ -1,0 +1,81 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="content">
+    <section>
+        <div class="container">
+            <f:if condition="{settings.itemSize} <= 0">
+                <f:then>
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">
+                                <f:translate key="tx_bwjobs_domain_model_job.title"/>
+                            </th>
+                            <th scope="col">
+                                <f:translate key="tx_bwjobs_domain_model_job.categories"/>
+                            </th>
+                            <th scope="col" class="d-none d-sm-table-cell">
+                                <f:translate key="tx_bwjobs_domain_model_location.city"/>
+                            </th>
+                            <th scope="col" class="d-none d-sm-table-cell">
+                                <f:translate key="tx_bwjobs_domain_model_job.jobType"/>
+                            </th>
+                            <f:if condition="{settings.application}">
+                                <th scope="col" class="d-none d-sm-table-cell">
+                                    <f:translate key="LLL:EXT:jobs/Resources/Private/Language/locallang_bwjobs.xlf:frontend.apply"/>
+                                </th>
+                            </f:if>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <f:for each="{jobs}" as="job">
+                            <f:render partial="Job/List" arguments="{job:job}"/>
+                        </f:for>
+                        </tbody>
+                    </table>
+                    <f:if condition="{jobs}==' '">
+                        <f:translate
+                                key="LLL:EXT:jobs/Resources/Private/Language/locallang_bwjobs.xlf:frontend.notfound"/>
+                    </f:if>
+                </f:then>
+                <f:else>
+                    <f:widget.paginate as="paginatedEvents" objects="{jobs}"
+                                       configuration="{itemsPerPage:'{settings.itemSize}'}">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">
+                                    <f:translate key="tx_bwjobs_domain_model_job.title"/>
+                                </th>
+                                <th scope="col">
+                                    <f:translate key="tx_bwjobs_domain_model_job.categories"/>
+                                </th>
+                                <th scope="col">
+                                    <f:translate key="tx_bwjobs_domain_model_location.city"/>
+                                </th>
+                                <th scope="col">
+                                    <f:translate key="tx_bwjobs_domain_model_job.jobType"/>
+                                </th>
+                                <th scope="col">
+                                    <f:translate key="LLL:EXT:jobs/Resources/Private/Language/locallang_bwjobs.xlf:frontend.apply"/>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <f:for each="{paginatedEvents}" as="job">
+                                <f:render partial="Job/List" arguments="{job:job}"/>
+                            </f:for>
+                            </tbody>
+                            <f:if condition="{jobs}==' '">
+                                <f:translate
+                                        key="LLL:EXT:jobs/Resources/Private/Language/locallang_bwjobs.xlf:frontend.notfound"/>
+                            </f:if>
+                        </table>
+                    </f:widget.paginate>
+                </f:else>
+            </f:if>
+
+        </div>
+    </section>
+</f:section>
+</html>

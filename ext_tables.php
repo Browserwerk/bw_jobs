@@ -28,7 +28,7 @@ call_user_func(
         }
 
         // add static includes
-        ExtensionManagementUtility::addStaticFile('bw_jobs', 'Configuration/TypoScript', 'Bw_Jobs');
+        ExtensionManagementUtility::addStaticFile('jobs', 'Configuration/TypoScript', 'jobs');
 
         // job language config
         ExtensionManagementUtility::addLLrefForTCAdescr(

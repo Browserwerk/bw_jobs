@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-08-13T19:30:02Z"
+          product-name="bw_jobs">
+        <header/>
+        <body>
+            <trans-unit id="title.description">
+                <source>title</source>
+            </trans-unit>
+            <trans-unit id="categories.description">
+                <source>categories</source>
+            </trans-unit>
+            <trans-unit id="slug.description">
+                <source>slug</source>
+            </trans-unit>
+            <trans-unit id="teaser.description">
+                <source>teaser</source>
+            </trans-unit>
+            <trans-unit id="description.description">
+                <source>description</source>
+            </trans-unit>
+            <trans-unit id="benefits.description">
+                <source>benefits</source>
+            </trans-unit>
+            <trans-unit id="education_requirements.description">
+                <source>educationRequirements</source>
+            </trans-unit>
+            <trans-unit id="experience_requirements.description">
+                <source>experienceRequirements</source>
+            </trans-unit>
+            <trans-unit id="qualifications.description">
+                <source>qualifications</source>
+            </trans-unit>
+            <trans-unit id="responsibilities.description">
+                <source>responsibilities</source>
+            </trans-unit>
+            <trans-unit id="skills.description">
+                <source>skills</source>
+            </trans-unit>
+            <trans-unit id="special_commitment.description">
+                <source>specialCommitment</source>
+            </trans-unit>
+            <trans-unit id="work_hours.description">
+                <source>workHours</source>
+            </trans-unit>
+            <trans-unit id="job_start.description">
+                <source>jobStart</source>
+            </trans-unit>
+            <trans-unit id="valid_through.description">
+                <source>validThrough</source>
+            </trans-unit>
+            <trans-unit id="location.description">
+                <source>location</source>
+            </trans-unit>
+            <trans-unit id="job_type.description">
+                <source>jobType</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

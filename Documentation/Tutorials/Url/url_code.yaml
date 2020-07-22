@@ -1,0 +1,13 @@
+BwJobs:git push --set-upstream origin feature/BF-24
+
+  type: Extbase
+  extension: BwJobs
+  plugin: Frontend
+  routes:
+    - { routePath: '/{job_slug}', _controller: 'Job::show', _arguments: {'job_slug': 'job'} }
+  defaultController: 'Job::show'
+  aspects:
+    job_slug:
+      type: PersistedAliasMapper
+      tableName: 'tx_bwjobs_domain_model_job'
+      routeFieldName: 'slug'

@@ -1,0 +1,107 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:be.container>
+
+<div class="typo3-fullDoc">
+	<div id="typo3-docheader">
+		<div class="typo3-docheader-functions">
+			<div class="left">
+				<f:be.buttons.csh />
+				<f:be.menus.actionMenu>
+					<f:be.menus.actionMenuItem
+							label="{f:translate(key: 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs.actionMenuItem.allJobs')}"
+							action="list" controller="Job" />
+					<f:be.menus.actionMenuItem
+							label="{f:translate(key: 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs.actionMenuItem.allJobTypes')}"
+							action="list" controller="JobType" />
+					<f:be.menus.actionMenuItem
+							label="{f:translate(key: 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs.actionMenuItem.allLocations')}"
+							action="list" controller="Location" />
+					<f:be.menus.actionMenuItem
+							label="{f:translate(key: 'LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs.actionMenuItem.allContacts')}"
+							action="list" controller="Contact" />
+				</f:be.menus.actionMenu>
+			</div>
+			<div class="right">
+				<f:be.pagePath />
+				<f:be.pageInfo />
+			</div>
+		</div>
+		<div class="typo3-docheader-buttons" style="height:38px;">
+			<div class="left">
+				<div class="btn-group">
+					<be:link.newRecord table="tx_bwjobs_domain_model_job" pid="{settings.storagePid}" class="btn btn-icon btn-default btn-sm"
+									   title="{f:translate(key:'tx_bwjobs.create')}{f:translate(key:'tx_bwjobs_domain_model_job')}">
+						<f:translate key="LLL:EXT:jobs/Resources/Private/Language/locallang_bwjobs.xlf:backend.newjob"/>
+						<f:image src="EXT:core/Resources/Public/Icons/T3Icons/overlay/overlay-edit.svg" width="16" height="16" />
+					</be:link.newRecord>
+
+					<be:link.newRecord table="tx_bwjobs_domain_model_jobtype" pid="{settings.storagePid}" class="btn btn-icon btn-default btn-sm"
+									   title="{f:translate(key:'tx_bwjobs.create')}{f:translate(key:'tx_bwjobs_domain_model_jobtype')}">
+						<f:translate key="LLL:EXT:jobs/Resources/Private/Language/locallang_bwjobs.xlf:backend.newemploy"/>
+						<f:image src="EXT:core/Resources/Public/Icons/T3Icons/content/content-clock.svg" width="16" height="16" />
+					</be:link.newRecord>
+
+					<be:link.newRecord table="tx_bwjobs_domain_model_location" pid="{settings.storagePid}" class="btn btn-icon btn-default btn-sm"
+									   title="{f:translate(key:'tx_bwjobs.create')}{f:translate(key:'tx_bwjobs_domain_model_job.location')}">
+						<f:translate key="LLL:EXT:jobs/Resources/Private/Language/locallang_bwjobs.xlf:backend.newlocation"/>
+
+						<f:image src="EXT:core/Resources/Public/Icons/T3Icons/apps/apps-pagetree-folder-root.svg" width="16" height="16" />
+					</be:link.newRecord>
+
+					<be:link.newRecord table="tx_bwjobs_domain_model_contact" pid="{settings.storagePid}" class="btn btn-icon btn-default btn-sm"
+									   title="{f:translate(key:'tx_bwjobs.create')}{f:translate(key:'tx_bwjobs_domain_model_location.contact')}">
+						<f:translate key="LLL:EXT:jobs/Resources/Private/Language/locallang_bwjobs.xlf:backend.newcontact"/>
+
+						<f:image src="EXT:core/Resources/Public/Icons/T3Icons/overlay/overlay-backenduser.svg" width="16" height="16" />
+					</be:link.newRecord>
+					<be:link.newRecord table="sys_category" pid="{settings.storagePid}" class="btn btn-icon btn-default btn-sm"
+									   title="{f:translate(key:'tx_bwjobs.create')}{f:translate(key:'tx_bwjobs_domain_model_job.categories')}">
+						<f:translate key="LLL:EXT:jobs/Resources/Private/Language/locallang_bwjobs.xlf:backend.newcategory"/>
+
+						<f:image src="EXT:core/Resources/Public/Icons/T3Icons/mimetypes/mimetypes-x-sys_category.svg" width="16" height="16" />
+
+					</be:link.newRecord>
+				</div>
+			</div>
+			<div class="right">
+				<f:be.buttons.shortcut />
+			</div>
+		</div>
+	</div>
+
+	<div id="typo3-docbody" style="top: 65px;">
+		<f:if condition="{settings.storagePid}">
+			<f:then>
+				<div id="typo3-inner-docbody">
+					<div class="pt-5">
+						<f:render section="content" />
+					</div>
+				</div>
+			</f:then>
+			<f:else>
+				<div class="alert alert-warning">
+					<div class="media">
+						<div class="media-left">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-warning fa-stack-1x"></i>
+								</span>
+						</div>
+						<div class="media-body">
+							<h4 class="error-title">Attention!</h4>
+							<p class="error-message">
+								You have <b>NOT</b> add the storagePid to your Template<br>
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</f:else>
+		</f:if>
+	</div>
+</div>
+</f:be.container>
+
+</html>

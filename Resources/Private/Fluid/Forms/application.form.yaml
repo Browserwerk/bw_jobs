@@ -1,0 +1,158 @@
+
+renderingOptions:
+  controllerAction: perform
+  addQueryString: false
+type: Form
+identifier: application
+label: Application
+prototypeName: bw_jobs
+finishers:
+  -
+    identifier: JobEmail
+    options:
+      email: EmailtoContact
+      subject: 'Application Email for Contact'
+      templatePathAndFilename: 'EXT:form/Resources/Private/Frontend/Templates/Finishers/Email/Html.html'
+      attachUploads: true
+      saveFiles: false
+  -
+    identifier: JobEmail
+    options:
+      email: EmailToSender
+      subject: Application
+      templatePathAndFilename: 'EXT:jobs/Resources/Private/Fluid/Forms/Email/Confirmation.html'
+      attachUploads: false
+  -
+    options:
+      pageUid: '73'
+      additionalParameters: ''
+    identifier: Redirect
+
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: application
+    label: Application
+    renderables:
+      -
+        type: GridRow
+        identifier: gridrow-1
+        label: 'Grid: Row'
+        renderables:
+          -
+            properties:
+              options:
+                mrs: Mrs.
+                mr: Mr.
+                other: Others
+            type: SingleSelect
+            identifier: singleselect
+            label: 'Salutation'
+          -
+            defaultValue: ''
+            type: Hidden
+            identifier: job-title
+            label: 'Job Title'
+      -
+        type: GridRow
+        identifier: gridrow
+        label: 'Grid: Row'
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: firstname
+            label: Firstname
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: lastname
+            label: Lastname
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Telephone
+        identifier: telephone
+        label: 'Telephone number'
+        validators:
+          -
+            identifier: NotEmpty
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+      -
+        defaultValue: ''
+        type: Email
+        identifier: email
+        label: 'Email address'
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: EmailAddress
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea
+        label: Text
+        validators:
+          -
+            identifier: NotEmpty
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+      -
+        type: GridRow
+        identifier: gridrow-2
+        label: 'Grid: Row'
+        renderables:
+          -
+            properties:
+              saveToFileMount: '1:/user_upload'
+              allowedMimeTypes:
+                - application/msword
+                - application/vnd.openxmlformats-officedocument.wordprocessingml.document
+                - application/pdf
+            type: FileUpload
+            identifier: fileupload-1
+            label: 'Curriculum vitae'
+          -
+            properties:
+              saveToFileMount: '1:/user_upload'
+              allowedMimeTypes:
+                - application/msword
+                - application/vnd.openxmlformats-officedocument.wordprocessingml.document
+                - application/pdf
+            type: FileUpload
+            identifier: fileupload
+            label: 'Cover letter'
+          -
+            properties:
+              saveToFileMount: '1:/user_upload'
+              allowedMimeTypes:
+                - application/pdf
+            type: FileUpload
+            identifier: fileupload-2
+            label: Other
+      -
+        defaultValue: ''
+        type: Hidden
+        identifier: sendtomail
+        label: 'Send to mail'

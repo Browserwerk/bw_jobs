@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:if condition="{flex.switchableControllerActions} =='Job->list'">
+    <strong>Job Listing</strong><br>
+    Detail Page: {flex.detailPage}<br>
+    Storage Pages: {flex.storagePid}
+
+</f:if>
+<f:if condition="{flex.switchableControllerActions} == 'Job->show'">
+    <strong>Show</strong><br>
+    <f:if condition="{flex.listPage}">
+        List Page: {flex.listPage}
+    </f:if>
+
+</f:if>
+<f:if condition="{flex.switchableControllerActions} == 'Job->filter'">
+    <strong>Filter</strong><br>
+    <f:if condition="{flex.listPage}">
+        List Page: {flex.listPage}
+    </f:if>
+</f:if>

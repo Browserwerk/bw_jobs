@@ -1,0 +1,29 @@
+{
+    "name": "browserwerk/bw_jobs",
+    "license": "MIT",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [
+        {
+            "name": "Vincent B\u00e4rtsch",
+            "role": "Developer"
+        },
+        {
+            "name": "Valentin S\u00fc\u00df",
+            "role": "Developer"
+        }
+    ],
+    "version": "1.1.0",
+    "require": {
+        "typo3/cms-core": "^10.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Browserwerk\\BwJobs\\": "Classes"
+        }
+    },
+    "replace": {
+        "bw_jobs": "self.version",
+        "typo3-ter/bw-jobs": "self.version"
+    }
+}

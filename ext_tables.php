@@ -21,8 +21,8 @@ call_user_func(
                 ],
                 [
                     'access'    => 'user,group',
-                    'icon'      => 'EXT:bw_jobs/ext_icon.svg',
-                    'labels'    => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_bwjobs.xlf',
+                    'icon'      => 'EXT:jobs/ext_icon.svg',
+                    'labels'    => 'LLL:EXT:jobs/Resources/Private/Language/locallang_bwjobs.xlf',
                 ]
             );
         }
@@ -33,28 +33,28 @@ call_user_func(
         // job language config
         ExtensionManagementUtility::addLLrefForTCAdescr(
             'tx_bwjobs_domain_model_job',
-            'EXT:bw_jobs/Resources/Private/Language/locallang_csh_tx_bwjobs_domain_model_job.xlf'
+            'EXT:jobs/Resources/Private/Language/locallang_csh_tx_bwjobs_domain_model_job.xlf'
         );
         ExtensionManagementUtility::allowTableOnStandardPages('tx_bwjobs_domain_model_job');
 
         // contact language config
         ExtensionManagementUtility::addLLrefForTCAdescr(
             'tx_bwjobs_domain_model_contact',
-            'EXT:bw_jobs/Resources/Private/Language/locallang_csh_tx_bwjobs_domain_model_contact.xlf'
+            'EXT:jobs/Resources/Private/Language/locallang_csh_tx_bwjobs_domain_model_contact.xlf'
         );
         ExtensionManagementUtility::allowTableOnStandardPages('tx_bwjobs_domain_model_contact');
 
         // job language config
         ExtensionManagementUtility::addLLrefForTCAdescr(
             'tx_bwjobs_domain_model_location',
-            'EXT:bw_jobs/Resources/Private/Language/locallang_csh_tx_bwjobs_domain_model_location.xlf'
+            'EXT:jobs/Resources/Private/Language/locallang_csh_tx_bwjobs_domain_model_location.xlf'
         );
         ExtensionManagementUtility::allowTableOnStandardPages('tx_bwjobs_domain_model_location');
 
         // jobType language config
         ExtensionManagementUtility::addLLrefForTCAdescr(
             'tx_bwjobs_domain_model_jobtype',
-            'EXT:bw_jobs/Resources/Private/Language/locallang_csh_tx_bwjobs_domain_model_jobtype.xlf'
+            'EXT:jobs/Resources/Private/Language/locallang_csh_tx_bwjobs_domain_model_jobtype.xlf'
         );
         ExtensionManagementUtility::allowTableOnStandardPages('tx_bwjobs_domain_model_jobtype');
 

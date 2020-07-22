@@ -1,5 +1,5 @@
 {
-    "name": "browserwerk/bw_jobs",
+    "name": "browserwerk/jobs",
     "license": "MIT",
     "type": "typo3-cms-extension",
     "description": "",
@@ -8,14 +8,10 @@
             "name": "Vincent B\u00e4rtsch",
             "role": "Developer"
         },
-        {
-            "name": "Valentin S\u00fc\u00df",
-            "role": "Developer"
-        }
     ],
-    "version": "1.1.0",
+    "version": "1.1.1",
     "require": {
-        "typo3/cms-core": "^10.4"
+        "typo3/cms-core": "~9.5"
     },
     "autoload": {
         "psr-4": {

@@ -32,8 +32,8 @@ call_user_func(
                     elements {
                         frontend {
                             iconIdentifier = bw_jobs-plugin-fontend
-                            title = LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs.plugin
-                            description = LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs.description
+                            title = LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs.plugin
+                            description = LLL:EXT:jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs.description
                             tt_content_defValues {
                                 CType = list
                                 list_type = bwjobs_frontend
@@ -49,7 +49,7 @@ call_user_func(
         $iconRegistry->registerIcon(
             'bw_jobs-plugin-frontend',
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-            ['source' => 'EXT:bw_jobs/ext_icon.svg']
+            ['source' => 'EXT:jobs/ext_icon.svg']
         );
 
         // Register for hook to show preview of tt_content element of CType="bwjobs_newcontentelement" in page module

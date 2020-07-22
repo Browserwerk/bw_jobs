@@ -19,7 +19,7 @@
         }
     },
     "replace": {
-        "bw_jobs": "self.version",
+        "jobs": "self.version",
         "typo3-ter/bw-jobs": "self.version"
     }
 }

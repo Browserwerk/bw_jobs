@@ -15,6 +15,7 @@ use TYPO3\CMS\Core\Messaging\AbstractMessage;
 use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 /***
  *
@@ -96,9 +97,7 @@ class JobController extends ActionController
             $pageRenderer= GeneralUtility::makeInstance(PageRenderer::class);
             $pageRenderer->addHeaderData(StructuredDataService::structuredDataForJob($job));
             $GLOBALS['TSFE']->page['title'] = $job->getTitle();
-
         }
-
     }
 
     /**

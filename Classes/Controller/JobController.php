@@ -96,9 +96,7 @@ class JobController extends ActionController
             $pageRenderer= GeneralUtility::makeInstance(PageRenderer::class);
             $pageRenderer->addHeaderData(StructuredDataService::structuredDataForJob($job));
             $GLOBALS['TSFE']->page['title'] = $job->getTitle();
-
         }
-
     }
 
     /**

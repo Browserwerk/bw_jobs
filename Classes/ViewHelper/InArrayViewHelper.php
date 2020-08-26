@@ -2,9 +2,7 @@
 
 namespace Browserwerk\BwJobs\ViewHelper;
 
-use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractConditionViewHelper;
-
-class InArrayViewHelper extends AbstractConditionViewHelper
+class InArrayViewHelper extends TYPO3\CMS\Fluid\Core\ViewHelper\AbstractConditionViewHelper
 {
     public function initializeArguments()
     {

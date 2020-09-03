@@ -43,5 +43,9 @@ config.tx_extbase.persistence.classes {
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:bw_jobs/Configuration/TypoScript/Plugin/" extensions="typoscript">
 
 [traverse(request.getQueryParams(), 'tx_bwjobs_frontend/job') > 0]
-    config.noPageTitle = 1
+    config.pageTitleProviders {
+        record {
+            provider = Browserwerk\BwJobs\Service\TitleService
+        }
+    }
 [global]

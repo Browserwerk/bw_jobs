@@ -11,6 +11,7 @@ use Browserwerk\BwJobs\Service\JobTitle;
 use Browserwerk\BwJobs\Service\PageTitleService;
 use Browserwerk\BwJobs\Service\StructuredDataService;
 use Browserwerk\BwJobs\Service\TitleGetter;
+use Browserwerk\BwJobs\Service\TitleService;
 use TYPO3\CMS\Core\Messaging\AbstractMessage;
 use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -95,7 +96,8 @@ class JobController extends ActionController
             $this->view->assign('job', $job);
             $pageRenderer= GeneralUtility::makeInstance(PageRenderer::class);
             $pageRenderer->addHeaderData(StructuredDataService::structuredDataForJob($job));
-            $GLOBALS['TSFE']->page['title'] = $job->getTitle();
+            $titleProvider = GeneralUtility::makeInstance(TitleService::class);
+            $titleProvider->setTitle($job->getTitle());
         }
     }
 

@@ -23,6 +23,7 @@ CREATE TABLE tx_bwjobs_domain_model_job (
 	currency varchar(255) DEFAULT '' NOT NULL,
 	salary int(11) unsigned DEFAULT '0' NOT NULL,
 	cycle varchar(255) DEFAULT '' NOT NULL,
+	level varchar(255) DEFAULT '' NOT NULL,
 	data_posted int(11) unsigned DEFAULT '0' NOT NULL,
 
 );

@@ -70,6 +70,15 @@
 			<trans-unit id="tx_bwjobs_domain_model_job.cycle">
 				<source>Cycle</source>
 			</trans-unit>
+			<trans-unit id="tx_bwjobs_domain_model_job.level">
+				<source>Level</source>
+			</trans-unit>
+			<trans-unit id="tx_bwjobs_domain_model_job.level_young">
+				<source>Young professionals</source>
+			</trans-unit>
+			<trans-unit id="tx_bwjobs_domain_model_job.level_profi">
+				<source>Professional experience</source>
+			</trans-unit>
 			<trans-unit id="tx_bwjobs_domain_model_job.cycle_hour">
 				<source>Hourly</source>
 			</trans-unit>

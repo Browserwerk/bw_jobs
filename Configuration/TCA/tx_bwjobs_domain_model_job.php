@@ -25,7 +25,7 @@ return [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, slug, teaser, description, benefits, education_requirements, experience_requirements, qualifications, responsibilities, skills, special_commitment, work_hours, job_start, valid_through, location, job_type',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, slug, teaser, --palette--;;times, location, job_type, 
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, slug,level, teaser, --palette--;;times, location, job_type, 
         --div--;LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.textlabel;;;1-1-1, description, benefits, education_requirements, experience_requirements, qualifications, responsibilities, skills, special_commitment, 
         --div--;LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.salarylabel;;;1-1-1, show_salary, currency, salary, cycle,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
@@ -450,6 +450,21 @@ return [
                     ['LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.cycle_day', 'DAY'],
                     ['LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.cycle_month', 'MONTH'],
                     ['LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.cycle_year', 'YEAR'],
+                ],
+                'size'     => 1,
+                'maxitems' => 1,
+                'eval'     => 'trim',
+            ],
+        ],
+        'level' => [
+            'exclude' => false,
+            'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.level',
+            'config'  => [
+                'type'       => 'select',
+                'renderType' => 'selectSingle',
+                'items'      => [
+                    ['LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.level_young', 'young'],
+                    ['LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.level_profi', 'profi'],
                 ],
                 'size'     => 1,
                 'maxitems' => 1,

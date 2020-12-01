@@ -82,6 +82,36 @@ class JobController extends ActionController
      */
     public function filterAction()
     {
+        $jobs = $this->jobRepository->findAll();
+        $categories=array();
+        $levels=array();
+        $locations=array();
+        foreach ($jobs as $job){
+            //Get all Categories
+            foreach ($job->getCategories() as $category){
+                if(!in_array($category->getTitle(), $categories)){
+                    $categories[] = $category->getTitle();
+                }
+            }
+            //Get all Location
+            foreach ($job->getLocation() as $location){
+                if(!in_array($location->getCity(), $locations)){
+                    $locations[] = $location->getCity();
+                }
+            }
+            //Get all Levels
+            if(!in_array($job->getLevel(), $levels) && $job->getLevel() !== ''){
+                $levels[] = $job->getLevel();
+            }
+        }
+
+        if (count($categories)!== 1)
+            $this->view->assign('categories', $categories);
+        if (count($levels)!== 1)
+                    $this->view->assign('levels', $levels);
+        if (count($locations)!== 1)
+                    $this->view->assign('locations', $locations);
+
     }
 
 

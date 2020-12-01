@@ -69,6 +69,7 @@ class StructuredDataService implements SingletonInterface
             $locationOutput['jobLocation']['address'] += ['addressRegion' => $location->getCountryzone()];
         }
 
+
         /** @var \Browserwerk\BwJobs\Domain\Model\JobType $firstJobType */
         $firstJobType = $job->getJobType()->toArray()[0];
 
@@ -92,6 +93,9 @@ class StructuredDataService implements SingletonInterface
         //Add locations Data to array
         $result += $locationOutput;
 
+        if ($job->getHomeoffice()){
+            $result += ['jobLocationType' => 'TELECOMMUTE'];
+        }
         //Recommended properties
         if ('' != $job->getDescription()) {
             $result += ['description' => $job->getDescription()];

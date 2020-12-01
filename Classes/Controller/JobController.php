@@ -104,6 +104,7 @@ class JobController extends ActionController
                 $levels[] = $job->getLevel();
             }
         }
+        $locations[] = "Homeoffice";
 
         if (count($categories)!== 1)
             $this->view->assign('categories', $categories);

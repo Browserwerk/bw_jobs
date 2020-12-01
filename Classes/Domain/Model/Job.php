@@ -125,6 +125,13 @@ class Job extends AbstractEntity
      * @var bool
      */
     protected $showSalary = '';
+
+    /**
+     * showSalary.
+     *
+     * @var bool
+     */
+    protected $homeoffice = '';
     /**
      * currency.
      *
@@ -520,6 +527,24 @@ class Job extends AbstractEntity
     public function setShowSalary(bool $showSalary)
     {
         $this->showSalary = $showSalary;
+    }
+
+    /**
+     * Returns the homeoffice.
+     *
+     * @return bool $homeoffice
+     */
+    public function getHomeoffice()
+    {
+        return (bool) $this->homeoffice;
+    }
+
+    /**
+     * Sets the homeoffice.
+     */
+    public function setHomeoffice(bool $homeoffice)
+    {
+        $this->showSalary = $homeoffice;
     }
 
     /**

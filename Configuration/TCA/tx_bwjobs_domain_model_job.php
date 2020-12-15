@@ -26,7 +26,7 @@ return [
     ],
     'types' => [
         '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, slug, homeoffice, level, teaser, --palette--;;times, location, job_type, 
-        --div--;LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.textlabel;;;1-1-1, description, benefits, education_requirements, experience_requirements, qualifications, responsibilities, skills, special_commitment, 
+        --div--;LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.textlabel;;;1-1-1, description, responsibilities, education_requirements, experience_requirements, qualifications, skills, benefits, special_commitment, 
         --div--;LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.salarylabel;;;1-1-1, show_salary, currency, salary, cycle,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],

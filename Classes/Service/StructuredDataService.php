@@ -93,9 +93,6 @@ class StructuredDataService implements SingletonInterface
         //Add locations Data to array
         $result += $locationOutput;
 
-        if ($job->getHomeoffice()){
-            $result += ['jobLocationType' => 'TELECOMMUTE'];
-        }
         //Recommended properties
         if ('' != $job->getDescription()) {
             $result += ['description' => $job->getDescription()];

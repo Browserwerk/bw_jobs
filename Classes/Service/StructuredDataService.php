@@ -69,6 +69,7 @@ class StructuredDataService implements SingletonInterface
             $locationOutput['jobLocation']['address'] += ['addressRegion' => $location->getCountryzone()];
         }
 
+
         /** @var \Browserwerk\BwJobs\Domain\Model\JobType $firstJobType */
         $firstJobType = $job->getJobType()->toArray()[0];
 

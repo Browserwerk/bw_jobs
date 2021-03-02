@@ -125,6 +125,13 @@ class Job extends AbstractEntity
      * @var bool
      */
     protected $showSalary = '';
+
+    /**
+     * homeoffice.
+     *
+     * @var bool
+     */
+    protected $homeoffice = '';
     /**
      * currency.
      *
@@ -145,6 +152,12 @@ class Job extends AbstractEntity
      * @var string
      */
     protected $cycle = null;
+    /**
+     * level.
+     *
+     * @var string
+     */
+    protected $level = null;
 
     /**
      * validThrough.
@@ -517,6 +530,24 @@ class Job extends AbstractEntity
     }
 
     /**
+     * Returns the homeoffice.
+     *
+     * @return bool $homeoffice
+     */
+    public function getHomeoffice()
+    {
+        return (bool) $this->homeoffice;
+    }
+
+    /**
+     * Sets the homeoffice.
+     */
+    public function setHomeoffice(bool $homeoffice)
+    {
+        $this->showSalary = $homeoffice;
+    }
+
+    /**
      * Returns the currency.
      *
      * @return string $currency
@@ -570,6 +601,23 @@ class Job extends AbstractEntity
     public function setCycle(string $cycle)
     {
         $this->cycle = $cycle;
+    }
+/**
+     * Returns the level.
+     *
+     * @return string $level
+     */
+    public function getLevel()
+    {
+        return $this->level;
+    }
+
+    /**
+     * Sets the level.
+     */
+    public function setLevel(string $level)
+    {
+        $this->level = $level;
     }
 
     /**

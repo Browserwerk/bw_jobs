@@ -127,7 +127,7 @@ class Job extends AbstractEntity
     protected $showSalary = '';
 
     /**
-     * showSalary.
+     * homeoffice.
      *
      * @var bool
      */

@@ -68,13 +68,8 @@ class JobController extends ActionController
      */
     public function listAction()
     {
-        if ('' != $this->settings['location'] || '' != $this->settings['jobtype'] || $this->settings['category']) {
-            $jobs = $this->jobRepository->findBySettings($this->settings['location'], $this->settings['jobtype'], $this->settings['category']);
-            $this->view->assign('jobs', $jobs);
-        } else {
-            $jobs = $this->jobRepository->findAll();
-            $this->view->assign('jobs', $jobs);
-        }
+        $jobs = $this->jobRepository->findAll();
+        $this->view->assign('jobs', $jobs);
     }
 
     /**

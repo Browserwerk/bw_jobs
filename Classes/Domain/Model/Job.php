@@ -544,7 +544,7 @@ class Job extends AbstractEntity
      */
     public function setHomeoffice(bool $homeoffice)
     {
-        $this->showSalary = $homeoffice;
+        $this->homeoffice = $homeoffice;
     }
 
     /**

@@ -44,6 +44,11 @@ class StructuredDataService implements SingletonInterface
                     '@type' => 'PostalAddress',
                 ],
             ],
+        ];
+        if ($job->getHomeoffice()) {
+            $locationOutput['jobLocationType'] = 'TELECOMMUTE';
+        }
+        $locationOutput +=[
             'hiringOrganization' => [
                 '@type'  => 'Organization',
                 'name'   => $location->getTitle(),
@@ -64,7 +69,7 @@ class StructuredDataService implements SingletonInterface
         if ('' !== $location->getCountry()) {
             $locationOutput['jobLocation']['address'] += ['addressCountry' => $location->getCountry()];
         }
-        
+
         if ('' !== $location->getCountryzone()) {
             $locationOutput['jobLocation']['address'] += ['addressRegion' => $location->getCountryzone()];
         }

@@ -102,7 +102,7 @@ class Job extends AbstractEntity
     /**
      * workHours.
      *
-     * @var int
+     * @var string
      */
     protected $workHours = null;
 
@@ -442,7 +442,7 @@ class Job extends AbstractEntity
     /**
      * Returns the workHours.
      *
-     * @return int $workHours
+     * @return string $workHours
      */
     public function getWorkHours()
     {
@@ -452,7 +452,7 @@ class Job extends AbstractEntity
     /**
      * Sets the workHours.
      */
-    public function setWorkHours(int $workHours)
+    public function setWorkHours(string $workHours)
     {
         $this->workHours = $workHours;
     }

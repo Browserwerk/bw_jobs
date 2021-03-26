@@ -306,8 +306,8 @@ return [
             'label'   => 'LLL:EXT:bw_jobs/Resources/Private/Language/locallang_db.xlf:tx_bwjobs_domain_model_job.work_hours',
             'config'  => [
                 'type' => 'input',
-                'size' => 10,
-                'eval' => 'int',
+                'size' => 250,
+                'eval' => 'trim',
             ],
         ],
         'job_start' => [

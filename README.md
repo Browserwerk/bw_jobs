@@ -5,7 +5,7 @@ The BW_Jobs extension is an easy to install TYPO3 Extension for creating a power
 # Installation
 composer.json
 ```sh
-  "browserwerk/bw_jobs": "^2.0",
+  "browserwerk/bw_jobs": "^1.4",
 ```
 - Add extension in the backend
 - Append to template 

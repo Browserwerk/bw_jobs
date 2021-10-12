@@ -22,7 +22,7 @@ Bowserwerk Job system
 		bw_jobs
 
 	:Copyright:
-		2020
+		2021
 
 	:Author:
 		Vincent Bärtsch

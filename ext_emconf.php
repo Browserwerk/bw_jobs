@@ -6,14 +6,14 @@ $EM_CONF[$_EXTKEY] = [
     'category'         => 'plugin',
     'author'           => 'Vincent Bärtsch',
     'author_company'   => 'Browserwerk GmbH // www.browserwerk.de',
-    'state'            => 'stable',
+    'state'            => 'dev',
     'uploadfolder'     => 0,
     'createDirs'       => '',
     'clearCacheOnLoad' => 0,
     'version'          => '1.4.0',
     'constraints'      => [
         'depends' => [
-            'typo3'              => '10.4.0-11-5-99',
+            'typo3'              => '10.4-11.5',
         ],
         'conflicts' => [],
         'suggests'  => [],
